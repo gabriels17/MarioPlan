@@ -1,14 +1,17 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import Navbar from './components/layout/Navbar';
 
-function App() {
-  return (
-    <BrowserRouter>
-      <div className="App">
-        <h1>MarioPlan</h1>
-      </div>
-    </BrowserRouter>
-  );
-}
+class App extends React.Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="App">
+          <Navbar />
+        </div>
+      </BrowserRouter>
+    );
+  };
+};
 
 export default App;
