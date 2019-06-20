@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { createProject } from '../../store/actions/projectActions';
 
 class CreateProject extends Component {
-  // TODO: Hook up to firebase and add functionality
   state = {
     title: '',
     content: ''
@@ -15,7 +14,6 @@ class CreateProject extends Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(this.state);
     this.props.createProject(this.state);
   }
   render() {
