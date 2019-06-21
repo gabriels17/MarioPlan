@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 
-const Dashboard = ({ projects }) => /*extends Component*/ {
+const Dashboard = ({ projects }) => {
   return (
     <div className="dashboard container">
       <div className="row">
